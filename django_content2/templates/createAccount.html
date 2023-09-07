@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+<form action="submit" method="POST">
+	{% csrf_token %}
+	<label for="Uname">Username:</label><br>
+	<input type ="text" id="Uname" name="Uname"><br>
+	<label for="Pword">Password:</label><br>
+	<input type ="text" id="Pword" name="Pword"><br>
+	<input type="submit" value="Submit"<br>
+</form>
+
+</body>
+</html>

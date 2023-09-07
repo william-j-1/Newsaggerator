@@ -1,0 +1,56 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'content_aggerator/title_page.css' %}">
+</head>
+<body>
+      
+	<div class ="top">
+	 
+	<h1>William News summary </h1>
+	<div>
+	<a href="http://127.0.0.1:8000/homelog-in/">
+	<p>click here to log in.
+	</a>
+	<a href="http://127.0.0.1:8000/homecreate-account/">
+	   click here to create account.</p>
+	</a>
+	</div>
+      <p> BBC news</p>
+	{% block content %}
+	<p>
+	<a href={{first.f}}>
+	{{first.a}}
+	</a>
+	</p>
+	<p>
+	<a href={{first.g}}>
+	{{first.b}}
+	</a>
+	</p>
+	<p>
+	<a href={{first.h}}>
+	{{first.c}}
+	</a>
+	</p>
+	<p>
+	<a href ={{first.i}}>
+	{{first.d}}
+	</a>
+	</p>
+	<p>
+	<a href={{second.i}}>
+	{{second.d}}
+	</a>
+	</p>
+	
+	{% endblock content %}
+	
+
+	</div>
+       
+	 
+	 
+
+</body>
+</html>
