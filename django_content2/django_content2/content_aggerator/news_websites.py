@@ -6,7 +6,7 @@ import mysql.connector
 db = mysql.connector.connect(
      host="localhost",
      user="root",
-     password="Ader1234",
+     password="******",
      database="news_sites"
     )
 mycursor =db.cursor()
